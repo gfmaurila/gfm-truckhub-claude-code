@@ -1,0 +1,32 @@
+HUD de Rotas — especificação funcional
+
+O HUD é opcional e possui três modos:
+
+1. Desativado: não abre janela no ETS2/ATS nem em outro monitor.
+2. Overlay: janela transparente/borderless, always-on-top e click-through em modo passivo.
+3. Janela independente: posicionável em qualquer monitor sem cobrir o jogo.
+
+O GFM TruckHub deve funcionar integralmente sem HUD.
+
+Conteúdo compacto priorizado:
+
+┌──────────────────────────────┐
+│ ROTA GFM               2 / 5 │
+│ Próxima: Curitiba / PR       │
+│ ETA:                 4h35    │
+│ Prazo do jogo:       6h00    │
+│ Margem GFM:         +4h00    │
+│ Risco:             SEGURO    │
+│ Entregar:         5.000 kg   │
+│ Restante lógico: 15.000 kg   │
+│ Velocidade:         78 km/h  │
+│ Telemetria: Real / Conectada │
+└──────────────────────────────┘
+
+Configuração: monitor, posição, escala, transparência, always-on-top, click-through, iniciar com viagem, ocultar ao finalizar e campos exibidos.
+
+`Restante lógico` é calculado pelo GFM TruckHub e pode divergir da massa original ainda reportada pelo jogo. A UI deve identificar essa diferença quando ambos forem mostrados.
+
+`Velocidade` e outros campos de telemetria aparecem somente quando a capability estiver disponível. Status deve distinguir origem Real/Mock e estados Stopped, Connecting, Connected, Paused, Faulted e Stale.
+
+A imagem `Telas/Rotas/9 - HUD.png` é referência estética ampla e contém elementos do Live Assistant. Chat, Twitch, YouTube, Kick, OBS, rádio, alertas de live e GPS duplicado não pertencem ao HUD compacto de Rotas.

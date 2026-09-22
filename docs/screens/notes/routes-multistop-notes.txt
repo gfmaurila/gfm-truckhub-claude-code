@@ -1,0 +1,14 @@
+Projeto 02 — ETS2/ATS Rotas — resumo funcional
+
+O MultiStop é uma rota lógica do GFM TruckHub. Paradas concluídas, quantidades entregues e peso restante não alteram o freight job interno do ETS2/ATS.
+
+01 — Dashboard / Início: viagem ativa, próxima parada, peso lógico restante, deadline do jogo quando REAL, margem GFM, ETA, risco e status da telemetria.
+02 — Rotas: listar, criar, editar, duplicar, excluir, importar/exportar e iniciar rotas lógicas.
+03 — Editor de Rota / Nova Rota: carga, peso inicial, jogo/mapa/perfil e N paradas com adicionar/remover/reordenar.
+04 — Viagem Ativa: acompanhamento de paradas, peso lógico restante, distância disponível, ETA, prazo, margem e progresso.
+05 — Histórico: rotas anteriores, paradas, duração, distâncias, atrasos e cancelamentos.
+06 — Configurações: ETS2/ATS, caminhos, margem padrão, HUD, aparência, dados e comportamento.
+07 — Integração / Telemetria: status de ETS2/ATS, bridge SCS read-only, instalação/reparo autorizado, capabilities e dados recebidos.
+08 — Diagnóstico / Logs: aplicação, SQLite, bridge, provider, último snapshot, erros e exportação sanitizada.
+
+Posição mundial é REAL. Cidade/empresa atuais só podem ser DERIVED com mecanismo espacial aprovado; enquanto isso permanecem UNKNOWN ou são informadas manualmente. Valores e mapas dos mockups são ilustrativos.

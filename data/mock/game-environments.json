@@ -1,0 +1,20 @@
+{
+  "games": [
+    {
+      "game": "ETS2",
+      "displayName": "Euro Truck Simulator 2",
+      "installationPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Euro Truck Simulator 2",
+      "installationDetected": true,
+      "userDataPath": "D:\\Work\\Euro Truck Simulator 2",
+      "mode": "mock"
+    },
+    {
+      "game": "ATS",
+      "displayName": "American Truck Simulator",
+      "installationPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\American Truck Simulator",
+      "installationDetected": true,
+      "userDataPath": "D:\\Work\\American Truck Simulator",
+      "mode": "mock"
+    }
+  ]
+}
