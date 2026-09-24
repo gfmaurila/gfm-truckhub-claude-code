@@ -1,0 +1,140 @@
+24/09/2026 10:25:44 --- START ---
+24/09/2026 10:25:44 TS SE Tool - 0.3.11.0
+24/09/2026 10:25:44 Enviroment - Windows (TESTED)
+24/09/2026 10:25:44 Installed .NET Framework 4.8 or later version
+24/09/2026 10:25:44 Initializing form...
+24/09/2026 10:25:45 Form initialized.
+24/09/2026 10:25:45 Loading config...
+24/09/2026 10:25:45 Config.cfg file not found or have wrong format. Restoring default
+24/09/2026 10:25:45 Config loaded.
+24/09/2026 10:25:45 Loading resources...
+24/09/2026 10:25:45 Resources loaded.
+24/09/2026 10:25:45 Creating form elements...
+24/09/2026 10:25:45 Done.
+24/09/2026 10:25:45 Prepare form...
+24/09/2026 10:25:45 Done.
+24/09/2026 10:25:45 Loading translation...
+24/09/2026 10:25:46 Done.
+24/09/2026 10:25:46 Caching game data...
+24/09/2026 10:25:46 Caching finished.
+24/09/2026 10:25:46 Opening form...
+24/09/2026 10:25:46 Done.
+24/09/2026 10:26:40 Loading file into memory: C:\Program Files (x86)\Steam\userdata\371560059\227300\remote\profiles\4D4150415F455453\save\autosave\game.sii
+24/09/2026 10:26:40 Decoding file: C:\Program Files (x86)\Steam\userdata\371560059\227300\remote\profiles\4D4150415F455453\save\autosave\game.sii
+24/09/2026 10:26:41 Backing up file to: C:\Program Files (x86)\Steam\userdata\371560059\227300\remote\profiles\4D4150415F455453\save\autosave\game_backup.sii
+24/09/2026 10:27:27 Loading file into memory: D:\Work\Euro Truck Simulator 2\profiles\4D4150415F455453\save\2\game.sii
+24/09/2026 10:27:27 Decoding file: D:\Work\Euro Truck Simulator 2\profiles\4D4150415F455453\save\2\game.sii
+24/09/2026 10:27:28 Backing up file to: D:\Work\Euro Truck Simulator 2\profiles\4D4150415F455453\save\2\game_backup.sii
+24/09/2026 10:27:29 Working on D:\Work\Euro Truck Simulator 2\profiles\4D4150415F455453\save\2 save file
+24/09/2026 10:27:29 Loading file into memory: D:\Work\Euro Truck Simulator 2\profiles\4D4150415F455453\profile.sii
+24/09/2026 10:27:29 Decoding file: D:\Work\Euro Truck Simulator 2\profiles\4D4150415F455453\profile.sii
+24/09/2026 10:27:29 Loading file into memory: D:\Work\Euro Truck Simulator 2\profiles\4D4150415F455453\save\2\info.sii
+24/09/2026 10:27:29 Decoding file: D:\Work\Euro Truck Simulator 2\profiles\4D4150415F455453\save\2\info.sii
+24/09/2026 10:27:31 Loaded 0 entries from Dependencies table.
+24/09/2026 10:27:31 Loading file into memory: D:\Work\Euro Truck Simulator 2\profiles\4D4150415F455453\save\2\game.sii
+24/09/2026 10:27:31 Prepare started
+24/09/2026 10:27:32 Added to cities dictionary: argostoli
+24/09/2026 10:27:32 Added to cities dictionary: athens
+24/09/2026 10:27:32 Added to cities dictionary: chios
+24/09/2026 10:27:32 Added to cities dictionary: bodo
+24/09/2026 10:27:32 Added to cities dictionary: lulea
+24/09/2026 10:27:32 Added to cities dictionary: chania
+24/09/2026 10:27:32 Added to cities dictionary: kalamata
+24/09/2026 10:27:32 Added to cities dictionary: rhodes
+24/09/2026 10:27:32 Added to cities dictionary: mitilini
+24/09/2026 10:27:32 Added to cities dictionary: falun
+24/09/2026 10:27:32 Added to cities dictionary: borlange
+24/09/2026 10:27:32 Added to cities dictionary: kiruna
+24/09/2026 10:27:32 Added to cities dictionary: lappeenranta
+24/09/2026 10:27:32 Added to cities dictionary: kajaani
+24/09/2026 10:27:32 Added to cities dictionary: kuusamo
+24/09/2026 10:27:32 Added to cities dictionary: mo_i_rana
+24/09/2026 10:27:32 Added to cities dictionary: banja_luka
+24/09/2026 10:27:32 Added to cities dictionary: durres
+24/09/2026 10:27:32 Added to cities dictionary: tuzla
+24/09/2026 10:27:32 Added to cities dictionary: arvidsjaur
+24/09/2026 10:27:32 Added to cities dictionary: niksic
+24/09/2026 10:27:32 Added to cities dictionary: podgorica
+24/09/2026 10:27:32 Added to cities dictionary: steinkjer
+24/09/2026 10:27:32 Added to cities dictionary: narvik
+24/09/2026 10:27:32 Added to cities dictionary: novi_sad
+24/09/2026 10:27:32 Added to cities dictionary: zenica
+24/09/2026 10:27:32 Added to cities dictionary: bihac
+24/09/2026 10:27:32 Added to cities dictionary: svolvaer
+24/09/2026 10:27:32 Added to cities dictionary: heraklion
+24/09/2026 10:27:32 Added to cities dictionary: tirana
+24/09/2026 10:27:32 Added to cities dictionary: vlore
+24/09/2026 10:27:32 Added to cities dictionary: sarajevo
+24/09/2026 10:27:32 Added to cities dictionary: patras
+24/09/2026 10:27:32 Added to cities dictionary: winsen
+24/09/2026 10:27:32 Added to cities dictionary: koper
+24/09/2026 10:27:32 Added to cities dictionary: larissa
+24/09/2026 10:27:32 Added to cities dictionary: kristiansund
+24/09/2026 10:27:32 Added to cities dictionary: mostar
+24/09/2026 10:27:32 Added to cities dictionary: tromso
+24/09/2026 10:27:32 Added to cities dictionary: karesuando
+24/09/2026 10:27:32 Added to cities dictionary: pristina
+24/09/2026 10:27:32 Added to cities dictionary: alesund
+24/09/2026 10:27:32 Added to cities dictionary: fier
+24/09/2026 10:27:32 Added to cities dictionary: trikala
+24/09/2026 10:27:32 Added to cities dictionary: lamia
+24/09/2026 10:27:32 Added to cities dictionary: andenes
+24/09/2026 10:27:32 Added to cities dictionary: alta
+24/09/2026 10:27:32 Added to cities dictionary: bijelo_polje
+24/09/2026 10:27:32 Added to cities dictionary: novo_mesto
+24/09/2026 10:27:32 Added to cities dictionary: karakaj
+24/09/2026 10:27:32 Added to cities dictionary: europoort
+24/09/2026 10:27:32 Loaded 0 entries from CargoesTable table.
+24/09/2026 10:27:32 Loaded 0 entries from CitysTable table.
+24/09/2026 10:27:32 Loaded 0 entries from CompaniesTable table.
+24/09/2026 10:27:32 Loaded 0 entries from TrucksTable table.
+24/09/2026 10:27:32 Loaded 0 entries from TrailerDefinition table.
+24/09/2026 10:27:32 Loaded 0 entries from TrailerVariants table.
+24/09/2026 10:27:32 Loaded 0 entries from TrailerDefinitionVariants table.
+24/09/2026 10:27:34 Paths checked 5300
+24/09/2026 10:27:34 Loaded 5300 routes from DataBase
+24/09/2026 10:27:34 Prepare ended
+24/09/2026 10:27:36 Successfully completed work with D:\Work\Euro Truck Simulator 2\profiles\4D4150415F455453\save\2 save file
+24/09/2026 10:28:11 Working on D:\Work\Euro Truck Simulator 2\profiles\4D4150415F455453\save\2 save file
+24/09/2026 10:28:11 Loading file into memory: D:\Work\Euro Truck Simulator 2\profiles\4D4150415F455453\profile.sii
+24/09/2026 10:28:11 Decoding file: D:\Work\Euro Truck Simulator 2\profiles\4D4150415F455453\profile.sii
+24/09/2026 10:28:11 Loading file into memory: D:\Work\Euro Truck Simulator 2\profiles\4D4150415F455453\save\2\info.sii
+24/09/2026 10:28:11 Decoding file: D:\Work\Euro Truck Simulator 2\profiles\4D4150415F455453\save\2\info.sii
+24/09/2026 10:28:12 Loaded 20 entries from Dependencies table.
+24/09/2026 10:28:12 Loading file into memory: D:\Work\Euro Truck Simulator 2\profiles\4D4150415F455453\save\2\game.sii
+24/09/2026 10:28:13 Prepare started
+24/09/2026 10:28:13 Loaded 0 entries from CargoesTable table.
+24/09/2026 10:28:13 Loaded 375 entries from CitysTable table.
+24/09/2026 10:28:13 Loaded 275 entries from CompaniesTable table.
+24/09/2026 10:28:13 Loaded 128 entries from TrucksTable table.
+24/09/2026 10:28:13 Loaded 64 entries from TrailerDefinition table.
+24/09/2026 10:28:13 Loaded 54 entries from TrailerVariants table.
+24/09/2026 10:28:13 Loaded 64 entries from TrailerDefinitionVariants table.
+24/09/2026 10:28:14 Paths checked 5300
+24/09/2026 10:28:14 Loaded 5300 routes from DataBase
+24/09/2026 10:28:14 Prepare ended
+24/09/2026 10:28:16 Successfully completed work with D:\Work\Euro Truck Simulator 2\profiles\4D4150415F455453\save\2 save file
+24/09/2026 10:29:04 Loading file into memory: D:\Work\Euro Truck Simulator 2\profiles\4D4150415F4554535F32\profile.sii
+24/09/2026 10:29:04 Decoding file: D:\Work\Euro Truck Simulator 2\profiles\4D4150415F4554535F32\profile.sii
+24/09/2026 10:29:17 Loading file into memory: D:\Work\Euro Truck Simulator 2\profiles\4D4150415F4554535F32\save\autosave\game.sii
+24/09/2026 10:29:17 Decoding file: D:\Work\Euro Truck Simulator 2\profiles\4D4150415F4554535F32\save\autosave\game.sii
+24/09/2026 10:29:18 Backing up file to: D:\Work\Euro Truck Simulator 2\profiles\4D4150415F4554535F32\save\autosave\game_backup.sii
+24/09/2026 10:29:20 Working on D:\Work\Euro Truck Simulator 2\profiles\4D4150415F4554535F32\save\autosave save file
+24/09/2026 10:29:20 Loading file into memory: D:\Work\Euro Truck Simulator 2\profiles\4D4150415F4554535F32\profile.sii
+24/09/2026 10:29:20 Loading file into memory: D:\Work\Euro Truck Simulator 2\profiles\4D4150415F4554535F32\save\autosave\info.sii
+24/09/2026 10:29:20 Decoding file: D:\Work\Euro Truck Simulator 2\profiles\4D4150415F4554535F32\save\autosave\info.sii
+24/09/2026 10:29:21 Loaded 0 entries from Dependencies table.
+24/09/2026 10:29:21 Loading file into memory: D:\Work\Euro Truck Simulator 2\profiles\4D4150415F4554535F32\save\autosave\game.sii
+24/09/2026 10:29:21 Prepare started
+24/09/2026 10:29:22 Loaded 0 entries from CargoesTable table.
+24/09/2026 10:29:22 Loaded 0 entries from CitysTable table.
+24/09/2026 10:29:22 Loaded 0 entries from CompaniesTable table.
+24/09/2026 10:29:22 Loaded 0 entries from TrucksTable table.
+24/09/2026 10:29:22 Loaded 0 entries from TrailerDefinition table.
+24/09/2026 10:29:22 Loaded 0 entries from TrailerVariants table.
+24/09/2026 10:29:22 Loaded 0 entries from TrailerDefinitionVariants table.
+24/09/2026 10:29:24 Paths checked 5299
+24/09/2026 10:29:24 Loaded 5299 routes from DataBase
+24/09/2026 10:29:24 Prepare ended
+24/09/2026 10:29:29 Successfully completed work with D:\Work\Euro Truck Simulator 2\profiles\4D4150415F4554535F32\save\autosave save file
+24/09/2026 10:30:16 --- END ---
