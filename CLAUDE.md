@@ -1,158 +1,156 @@
-# GFM TruckHub — CLAUDE.md
+# GFM TruckHub — Claude Code
 
 ## Missão
-Construir um novo GFM TruckHub para Euro Truck Simulator 2 e American Truck Simulator a partir dos layouts fornecidos em `references/screens/`.
+Construir o GFM TruckHub para Euro Truck Simulator 2 (ETS2) e American Truck Simulator (ATS), seguindo as tasks versionadas, a arquitetura aprovada e as referências visuais externas.
+
+## Fonte de estado
+Antes de qualquer alteração, leia nesta ordem:
+1. `PROJECT-STATE.md`
+2. `tasks/CURRENT.md`
+3. a task apontada por `tasks/CURRENT.md`
+4. regras relevantes em `.claude/rules/`
+5. skills relevantes em `.claude/skills/`
+
+A task atual é a única unidade de trabalho autorizada. Não avance automaticamente.
+
+## Referências visuais externas — caminho canônico
+As imagens pesadas não precisam estar no pacote/ZIP. Considere como raiz canônica:
+
+`D:\Empresa\GFMaurila\projetos\gfm-truckhub-claude-code-zip\references\screens`
+
+Os caminhos relativos documentados em `docs/screens/SCREEN-CATALOG.md` e `docs/screens/SCREEN-MANIFEST.md` são resolvidos a partir dessa raiz.
+
+Exemplo:
+`references/screens/routes/010-dashboard.png`
+=> `D:\Empresa\GFMaurila\projetos\gfm-truckhub-claude-code-zip\references\screens\routes\010-dashboard.png`
+
+Se uma imagem não estiver acessível:
+- NÃO invente seu conteúdo;
+- use as notas textuais disponíveis apenas para planejamento;
+- registre `VISUAL_REFERENCE_UNAVAILABLE`;
+- não declare fidelidade visual nem conclua Quality Gate visual sem inspeção real.
 
 ## REGRA MÁXIMA — UI FIRST
-Antes de implementar regras reais, o sistema Desktop inteiro deve existir, abrir e ser 100% navegável usando JSON de mock.
+Antes de implementar regras reais, o Desktop inteiro deve existir, abrir e ser navegável com JSON mock.
 
 Ordem obrigatória:
 1. Pesquisa técnica.
 2. Arquitetura.
-3. Separação completa das tasks.
-4. Implementar TODAS as telas aprovadas.
-5. Tornar TODO o Desktop navegável.
-6. Alimentar TODAS as telas com JSON mock.
-7. Validar fidelidade visual aos layouts.
-8. Executar o Desktop para validação do Product Owner.
-9. PARAR e aguardar aprovação explícita.
-10. Somente depois implementar Domain/CQRS, extração real, persistência real, jobs, graph/routing, telemetria e integrações.
+3. Decomposição completa em tasks.
+4. Implementação de TODAS as telas aprovadas.
+5. Navegação completa.
+6. JSON mock em TODAS as telas.
+7. Comparação com as referências visuais reais.
+8. Execução do Desktop para validação do Product Owner.
+9. STOP e aguardar aprovação explícita.
+10. Somente depois: Domain/CQRS real, Map Extractor, persistência real, jobs, graph/routing, telemetria e integrações.
 
-NUNCA pule o Quality Gate visual.
-
-## Layouts
-Os PNGs em `references/screens/` são ESPECIFICAÇÃO VISUAL, não inspiração.
-- Não redesenhar.
-- Não simplificar.
-- Não remover campos.
-- Não alterar hierarquia visual sem solicitação.
-- Reproduzir os layouts o mais fielmente possível.
+Nunca pule o Quality Gate visual.
 
 ## Arquitetura alvo
-- .NET Desktop / WPF / MVVM
+- .NET 10
+- WPF / MVVM
 - Domain puro
 - Application com CQRS
 - Contracts
 - Infrastructure
-- armazenamento local JSON inicialmente
+- JSON local inicialmente
+- abstrações de repository
 - jobs internos do Desktop inicialmente
 - Map Extractor ETS2/ATS
 - Graph / Routing
 - Telemetry Provider real + mock
-- API é evolução posterior quando necessária
-- Docker NÃO é requisito do Core/Rotas
-- Docker Compose é permitido/previsto para n8n e automações
+- API somente quando houver necessidade comprovada
+- Docker não é requisito de Core/Rotas
+- Docker Compose permitido para n8n/automações opcionais
+
+## Limites arquiteturais
+- Domain não referencia WPF, JSON, HTTP, Docker, n8n ou Infrastructure.
+- Application não conhece detalhes de persistência.
+- Infrastructure implementa portas/contratos.
+- UI consome Application/Contracts; regra de negócio não vive em View/ViewModel.
+- Código dependente de ATS/ETS2 deve ficar atrás de contratos substituíveis.
+- Mock e Real devem compartilhar contratos quando representam a mesma capability.
 
 ## Offline First
-Rotas deve funcionar sem Docker, PostgreSQL, Redis, n8n ou servidor externo.
+Rotas deve funcionar sem Docker, PostgreSQL, Redis, n8n, API remota ou servidor externo.
 
 ## Game Environment
-### Instalação
-Detectar automaticamente ao iniciar o programa.
-Local típico Steam:
-`C:\Program Files (x86)\Steam\steamapps\common\`
-- `Euro Truck Simulator 2`
-- `American Truck Simulator`
+Instalação do jogo e pasta de perfil/dados são conceitos distintos.
 
-Não assumir somente C:. Detectar Steam Libraries em outros discos.
+Detectar Steam e Steam Libraries, inclusive em outros discos. Caminhos de perfil/dados são configuráveis e nunca devem ser hardcoded como requisito.
 
-### Perfil/dados definidos pelo usuário
-O usuário configura separadamente:
-- `D:\Work\Euro Truck Simulator 2`
-- `D:\Work\American Truck Simulator`
+Arquivos pesados, perfis e instalações ATS/ETS2 usados como referência podem ficar fora do repositório. Documente o caminho esperado; não copie esses dados para o projeto.
 
-Instalação do jogo e pasta de perfil/dados são conceitos diferentes.
-Todos os caminhos devem aceitar detecção, validação, persistência e alteração.
+## Grounding
+Nunca especule sobre código, arquivo de jogo, formato SCS ou imagem que não foi aberto/validado.
+Para pesquisa externa, prefira documentação/fonte primária e registre fonte, data e implicação técnica.
+Não copie implementação de terceiros sem verificar licença.
 
-## Pesquisa obrigatória antes do Map Extractor
-Pesquisar como ferramentas/ecossistema ETS2/ATS extraem e estruturam mapas.
-Estudar conceitos e formatos usados por:
-- SCS Game Archive / HashFS
-- MapExporter
-- TruckSim Maps
-- TsMap
-- TruckLib
-- formatos de sector/prefab/SII
-- base game + DLC
-- mods + load order + overrides
-
-Não copiar implementação de terceiros sem análise de licença.
-Gerar documentação e decisões antes do código real.
-
-## Mapa efetivo
-O objetivo é representar o mapa realmente carregado:
-Base Game + DLCs instaladas + Mods ativos + ordem/prioridade + overrides.
-
-## Storage inicial
-JSON local, particionado quando necessário:
-- config
-- maps
-- sectors
-- routes
-- history
-- telemetry
-- imports
-
-Implementar abstrações de repository para permitir trocar JSON por outro storage futuramente sem contaminar Domain/Application.
-
-## Jobs internos
-Inicialmente podem rodar no processo Desktop:
-- GameInstallationScanJob
-- GameVersionDetectionJob
-- DlcDetectionJob
-- ModDetectionJob
-- MapChangeDetectionJob
-- MapExtractionJob
-- MapIndexJob
-- TelemetryPollingJob
-- RouteProgressJob
-- AutoSaveJob
-
-Jobs pesados devem ser canceláveis, observáveis e não bloquear a UI.
-
-## Módulos futuros
-Planejar agora, desenvolver somente na fase correspondente:
-- Rotas
-- Live Assistant
-- Narration Engine
-- n8n Automation
-- GFM Crazy Traffic
-
-## n8n
-n8n/automação de voz mantém Docker Compose.
-Falha/ausência do Docker não pode impedir o Core/Rotas de iniciar.
-
-## Regra de execução
+## Execução de tasks
 Uma task por vez.
-Nunca iniciar automaticamente a próxima task.
+
+Antes:
+- confirme task atual;
+- leia critérios de aceite;
+- identifique arquivos permitidos/proibidos;
+- identifique referências visuais e skills aplicáveis.
+
+Durante:
+- faça apenas mudanças necessárias à task;
+- preserve decisões existentes;
+- não crie infraestrutura futura por antecipação;
+- mantenha mocks determinísticos.
+
 Ao concluir:
-- build
-- testes aplicáveis
-- `git diff --check`
-- relatório
-- STOP
+- `dotnet restore` quando aplicável;
+- `dotnet build` quando aplicável;
+- `dotnet test` quando aplicável;
+- `git diff --check`;
+- revisão de escopo;
+- relatório em `docs/reports/<TASK-ID>.md`;
+- atualize `PROJECT-STATE.md` somente com fatos concluídos;
+- STOP.
 
-Mudança visual exige validação manual do Product Owner.
+Falha em qualquer gate => task não está concluída.
 
+## Política de subagentes
+Use subagentes quando houver trabalho independente, pesquisa isolada ou revisão especializada.
+Não use subagentes para uma alteração simples de um único arquivo.
 
-## Canonical file naming
+Papéis disponíveis em `.claude/agents/`:
+- researcher
+- architect
+- tech-lead
+- frontend
+- developer
+- tester
+- reviewer
+- map-specialist
+- telemetry-specialist
+- documentation
 
-Project-owned files and folders use lowercase kebab-case unless the tool requires a fixed filename.
-Claude Code fixed entry files remain uppercase where conventional, e.g. `CLAUDE.md`.
+O agente principal/orquestrador mantém a responsabilidade pelo escopo e pela decisão de STOP.
 
-Visual references are grouped by module:
-- `references/screens/core/`
-- `references/screens/routes/`
-- `references/screens/live-assistant/`
-- `references/screens/automation-n8n/`
-- `references/screens/crazy-traffic/`
+## Skills
+Skills em `.claude/skills/` são procedimentos reutilizáveis. Leia a skill correspondente antes de executar trabalho especializado.
 
-Screen filenames use a sortable numeric prefix plus a semantic English slug:
-`010-dashboard.png`, `030-route-editor.png`, `090-hud.png`.
+## Segurança
+- Nunca gravar secrets no repositório, `CLAUDE.md`, relatórios ou mocks.
+- Não modificar arquivos reais de instalação/perfil ATS/ETS2 sem autorização explícita.
+- Operações de descoberta são read-only por padrão.
+- Modificação de mods/perfis pertence às fases explicitamente autorizadas.
+- Nunca remover teste ou relaxar assertion apenas para obter PASS.
 
-Before implementing any UI task, read:
-- `docs/screens/SCREEN-CATALOG.md`
-- the relevant module images
-- relevant notes under `docs/screens/notes/`
+## Convenções
+Arquivos próprios do projeto: lowercase kebab-case, exceto nomes fixos/convenções (`CLAUDE.md`, `README.md`, `PROJECT-STATE.md`).
+IDs de telas e tasks são estáveis.
+Não renomeie IDs históricos para “organizar”.
 
-Never infer a screen from its filename alone: inspect the actual image before coding.
+## Definição de STOP
+STOP significa:
+- não iniciar próxima task;
+- não implementar “só mais uma coisa”;
+- não transformar recomendação futura em código;
+- apresentar resultado, gates e pendências;
+- aguardar comando explícito do Product Owner.

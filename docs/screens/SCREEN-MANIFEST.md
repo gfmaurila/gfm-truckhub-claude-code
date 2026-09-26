@@ -1,5 +1,7 @@
 # Screen Manifest
 
+> External screen root: `D:\Empresa\GFMaurila\projetos\gfm-truckhub-claude-code-zip\references\screens`
+
 Canonical visual references used by Claude Code.
 
 - `references/screens/automation-n8n/010-n8n-automation.png`

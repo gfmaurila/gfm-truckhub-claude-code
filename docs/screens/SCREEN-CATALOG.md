@@ -1,5 +1,8 @@
 # Screen Catalog
 
+> External screen root: `D:\Empresa\GFMaurila\projetos\gfm-truckhub-claude-code-zip\references\screens`
+> Paths below are logical repository-style paths; resolve them under that external root.
+
 These files are the visual source of truth. Claude must use the stable screen ID in tasks and reports.
 
 ## Core
