@@ -36,7 +36,7 @@ AWS é alvo cloud, não dependência do Desktop. Consulte `infrastructure/aws/RE
 Arquivos-fonte oficiais: `docs/architecture/drawio/*.drawio`. Exportações devem ficar em `docs/architecture/exports/`. Diagramas precisam identificar o que é IMPLEMENTED, PLANNED, OPTIONAL, LOCAL ONLY e AWS ONLY.
 
 
-![Arquitetura GFM.Template.CMS](docs/Arquitetura-GFM-Template-CMS.png)
+![Arquitetura GFM.Template.CMS](docs/architecture/Arquitetura-GFM-Template-CMS.png)
 
 
 ## Referências visuais
