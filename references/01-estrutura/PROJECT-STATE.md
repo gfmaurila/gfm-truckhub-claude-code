@@ -34,7 +34,3 @@ Auto-detectar Steam/Steam Libraries.
 Configuradas pelo usuário, exemplos:
 - D:\Work\Euro Truck Simulator 2
 - D:\Work\American Truck Simulator
-
-
-## Refatoração estrutural 2026-10-03
-Estrutura-base reorganizada no padrão Local/Offline First → Container Ready → Cloud Ready → AWS Target. Negócio, tasks, mocks, referências e regra UI First preservados. Diretórios cloud/backend adicionados como estrutura alvo; não representam implementação concluída.

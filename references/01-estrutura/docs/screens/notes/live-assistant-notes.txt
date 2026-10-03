@@ -1,0 +1,114 @@
+GFM TruckHub
+│
+├── 01 — Routes / MultiStop
+│
+├── 02 — Live Assistant       ← NOVO MÓDULO CONSOLIDADO
+│   │
+│   ├── OBS Monitor
+│   ├── Live Session
+│   ├── YouTube Integration
+│   ├── Twitch Integration
+│   ├── Kick Integration
+│   │
+│   ├── Chat Engine
+│   │   ├── Receber mensagens
+│   │   ├── Responder mensagens
+│   │   ├── Inscrições
+│   │   ├── Membros / follows
+│   │   └── Eventos da live
+│   │
+│   ├── Automation Engine
+│   │   ├── Respostas automáticas
+│   │   ├── Frases aleatórias
+│   │   ├── Eventos ATS/ETS2
+│   │   └── Regras / cooldown
+│   │
+│   ├── Narration Engine
+│   │   ├── Voz local
+│   │   ├── Frases cadastradas
+│   │   ├── Templates
+│   │   └── IA opcional
+│   │
+│   ├── HUD / Overlay
+│   │   ├── Chat
+│   │   ├── Rota
+│   │   ├── Pontos / MultiStop
+│   │   ├── Mapa
+│   │   ├── Velocidade
+│   │   ├── Telemetria
+│   │   └── Barra inferior
+│   │
+│   └── Ulanzi Controller
+│       ├── Abrir/fechar Chat
+│       ├── Abrir/fechar Rota
+│       ├── Abrir/fechar Pontos
+│       ├── Abrir/fechar Mapa
+│       ├── Abrir/fechar Velocidade
+│       ├── Mostrar/ocultar HUD
+│       ├── Mutar narração
+│       └── Atalhos configuráveis
+│
+└── futuros módulos
+
+
+
+| #      | Tela                         | Função                                                                |
+| ------ | ---------------------------- | --------------------------------------------------------------------- |
+| **01** | **Live Assistant Dashboard** | Visão geral: OBS, jogo, plataformas, chat, narração e status da live  |
+| **02** | **OBS & Live**               | Configurar/detectar OBS, início/fim automático da sessão              |
+| **03** | **Plataformas**              | YouTube, Twitch e Kick; conexão, autenticação e status                |
+| **04** | **Chat Central**             | Visualizar chats das plataformas juntos e responder                   |
+| **05** | **Automação do Chat**        | Regras para primeira mensagem, inscrição, follow, membro, doação etc. |
+| **06** | **Mensagens & Frases**       | Cadastro das frases automáticas e aleatórias por categoria            |
+| **07** | **Eventos ATS/ETS2**         | Batida, multa, pedágio, abastecimento, entrega, trânsito etc.         |
+| **08** | **Narration Engine**         | Voz, TTS, volume, fila, prioridade, cooldown, IA/local                |
+| **09** | **IA & Respostas**           | Configurar quando usar IA, prompts, limites e custos                  |
+| **10** | **HUD / Overlay Designer**   | Posição, tamanho, transparência e comportamento dos widgets           |
+| **11** | **Ulanzi / Atalhos / Teclado**         | Configurar cada botão para abrir/fechar Chat, Mapa, Rota etc.         |
+| **12** | **Histórico da Live**        | Chats, eventos, respostas, narrações e estatísticas da sessão         |
+| **13** | **HUD In-Game**              | A interface que efetivamente aparece por cima do ATS/ETS2             |
+
+
+
+
+
+                    HUD IN-GAME
+                        │
+       ┌────────────────┼─────────────────┐
+       │                │                 │
+    💬 Chat          🗺 Mapa          🚛 Rota
+       │
+    📍 Pontos        🚦 Velocidade
+       │
+    📦 Entrega       📊 Live
+       │
+    🔊 Narração      📡 Plataformas
+
+
+
+
+
+ULANZI
+
+[💬 CHAT]    [🗺 MAPA]     [🚛 ROTA]
+
+[📍 PONTOS]  [🚦 VELOC.]   [📦 ENTREGA]
+
+[🔊 VOZ]     [📊 LIVE]     [👁 HUD]
+
+
+
+ATS / ETS2 praticamente limpo
+
+
+──────────────────────────────────────────────────────────────
+▶ YouTube ●   Twitch ●   Kick ●   💬 7   🔊 ON   OBS ●   🚛 ●
+──────────────────────────────────────────────────────────────
+
+
+
+
+
+
+
+

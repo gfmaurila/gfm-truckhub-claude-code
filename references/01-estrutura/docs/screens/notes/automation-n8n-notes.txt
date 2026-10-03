@@ -1,0 +1,11 @@
+| #      | Tela                           | Função                                                                                               |
+| ------ | ------------------------------ | ---------------------------------------------------------------------------------------------------- |
+| **01** | **Automação / n8n**            | Liga/desliga n8n, URL, webhook, status do Docker/n8n e teste de conexão                              |
+| **02** | **Eventos e Automações**       | Define quais eventos de Rotas, Live Assistant e Crazy Traffic podem disparar ações                   |
+| **03** | **Respostas Automáticas**      | Cadastra todas as frases locais para cada evento, com adicionar/editar/excluir                       |
+| **04** | **IA**                         | Liga/desliga IA, configura provedor, API Key/modelo e testa conexão                                  |
+| **05** | **Regras e Estratégias**       | Define por evento: `Somente Local`, `Somente IA` ou `IA + Fallback Local`, intervalo, repetição etc. |
+| **06** | **Teste / Monitor de Eventos** | Simula eventos e mostra o fluxo acontecendo em tempo real para você testar                           |
+
+
+

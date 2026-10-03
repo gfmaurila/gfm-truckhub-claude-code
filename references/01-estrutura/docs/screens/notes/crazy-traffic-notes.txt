@@ -1,0 +1,178 @@
+| #      | Tela                             | Função                                                                                                 |
+| ------ | -------------------------------- | ------------------------------------------------------------------------------------------------------ |
+| **01** | **Crazy Traffic — Dashboard**    | Liga/desliga o módulo e mostra o perfil atual, densidade, agressividade e eventos recentes.            |
+| **02** | **Perfis de Trânsito**           | Perfis `Normal`, `Realista`, `Barbeiros`, `Caos` e criação de perfis personalizados.                   |
+| **03** | **Densidade de Tráfego**         | Quantidade de carros/caminhões, horários, cidades, rodovias e intensidade.                             |
+| **04** | **Comportamento dos Motoristas** | Apressados, lentos, fechadas, mudanças de faixa, freadas, demora para arrancar etc.                    |
+| **05** | **Buzinas e Reações**            | Configura quando motoristas buzinam: colisão, fechada, demora, bloqueio da pista etc.                  |
+| **06** | **Xingamentos / Vozes**          | Biblioteca de falas, frequência, volume, categorias e possibilidade de adicionar seus próprios áudios. |
+| **07** | **Eventos e Colisões**           | Define reações conforme intensidade da batida e outros acontecimentos do trânsito.                     |
+| **08** | **Configurações / Diagnóstico**  | ATS/ETS2, caminhos do mod, versão, logs, compatibilidade e teste do sistema.                           |
+
+
+
+
+GFM TruckHub
+│
+├── Rotas
+│
+├── Live Assistant
+│
+└── Crazy Traffic
+    │
+    ├── 01 Dashboard
+    ├── 02 Perfis de Trânsito
+    ├── 03 Densidade
+    ├── 04 Comportamento
+    ├── 05 Buzinas e Reações
+    ├── 06 Xingamentos / Vozes
+    ├── 07 Eventos e Colisões
+    └── 08 Configurações / Diagnóstico
+
+
+
+
+GFM TruckHub
+│
+├── Rotas
+├── Live Assistant
+│
+└── Crazy Traffic
+      │
+      ├── Painel de configuração
+      ├── Perfis de trânsito
+      ├── Reações
+      ├── Áudios / xingamentos
+      └── Gerenciador do MOD
+                │
+                ▼
+       GFM Crazy Traffic MOD
+                │
+        ┌───────┴────────┐
+        ▼                ▼
+       ATS              ETS2
+
+
+
+
+
+
+Perfil: BARBEIROS
+
+Densidade             80%
+Agressividade         75%
+Motoristas lentos     20%
+Motoristas apressados 40%
+Fechadas              35%
+Freadas                25%
+
+☑ Buzinas
+☑ Xingamentos
+☑ Reações a colisões
+☑ Motoristas impacientes
+
+
+
+
+
+
+GFM CRAZY TRAFFIC MOD
+
+Jogo
+● Euro Truck Simulator 2
+○ American Truck Simulator
+
+Versão detectada
+1.61.x
+
+MOD
+GFM Crazy Traffic
+
+Status
+🟢 Instalado
+🟢 Compatível
+🟢 Ativado
+
+[ INSTALAR MOD ]
+[ ATUALIZAR MOD ]
+[ REMOVER MOD ]
+
+Pasta detectada:
+...\Euro Truck Simulator 2\mod\
+
+Perfil aplicado:
+BARBEIROS
+
+Última geração:
+20/09/2026 03:34
+
+
+
+
+GFM TruckHub
+    │
+    └── Crazy Traffic
+          │
+          ├── Configurações
+          ├── Reaction Engine
+          └── Mod Manager
+                    │
+          ┌─────────┴─────────┐
+          ▼                   ▼
+GFM_CrazyTraffic_ATS   GFM_CrazyTraffic_ETS2
+          │                   │
+          ▼                   ▼
+        ATS 1.61            ETS2 1.61
+
+
+
+
+
+
+
+
+
+
+GFM_CrazyTraffic_ETS2/
+│
+├── manifest.sii
+├── description.txt
+│
+├── def/
+│   ├── traffic_data.sii
+│   ├── traffic_rules.sii
+│   └── vehicle/
+│       └── ai/
+│
+├── sound/
+│   └── gfm/
+│       ├── horns/
+│       └── reactions/
+│
+└── profiles/
+    ├── normal/
+    ├── realistic/
+    ├── barbeiros/
+    └── chaos/
+
+
+
+
+
+
+
+Crazy Traffic
+
+Agressividade       ███████░░░ 70%
+Densidade           ████████░░ 80%
+Motoristas lentos   ███░░░░░░░ 30%
+Apressados          █████░░░░░ 50%
+Buzinas             ██████░░░░ 60%
+Reações             ███████░░░ 70%
+
+Perfil:
+[ BARBEIROS ]
+
+          [ APLICAR NO JOGO ]
+
+
